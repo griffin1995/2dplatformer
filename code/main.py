@@ -9,7 +9,7 @@ from ui import UI
 class Game:
     def __init__(self):
 
-        # game attribute
+        # game attributes
         self.level_unlocked = 0
         self.full_health = 100
         self.current_health = 100
@@ -17,9 +17,9 @@ class Game:
 
         # audio
         self.bg_music_level = pygame.mixer.Sound(
-            'C:/Users/Jack/Documents/GitHub/collegeWork/Units/Visual_Programming/game/audio/level_music.wav')
+            '..//game/audio/level_music.wav')
         self.bg_music_menu = pygame.mixer.Sound(
-            'C:/Users/Jack/Documents/GitHub/collegeWork/Units/Visual_Programming/game/audio/overworld_music.wav')
+            '..//game/audio/overworld_music.wav')
 
         # overworld creation
         self.overworld = Overworld(
